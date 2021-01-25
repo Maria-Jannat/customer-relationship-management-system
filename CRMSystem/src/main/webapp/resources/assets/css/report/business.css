@@ -1,0 +1,49 @@
+/*REPORT*/
+
+.business-report-card {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    /*background-color: #fff;*/
+    background-color: red;
+    overflow-x: scroll;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+}
+
+th{
+    /*background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);*/
+    /*opacity: 1%;*/
+    font-weight: 300;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.activities-report-card{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+}
+

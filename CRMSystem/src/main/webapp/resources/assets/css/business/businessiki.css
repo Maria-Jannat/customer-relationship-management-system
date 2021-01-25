@@ -1,0 +1,26 @@
+.business-create-body{
+    background: white;;
+    height: auto;
+    width: 800px;
+    margin: auto;
+    /*padding: 10px;*/
+    border-right: 5px solid orangered;
+    border-bottom: 5px solid orangered;
+    /*margin-top: 10px;*/
+    margin-bottom: 15px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+#business-table{
+    margin: auto;
+}
+
+#business-field {
+    float: right;
+    margin-right: 25px;
+}
+
+.business-image{
+     background-image: url("https://media.istockphoto.com/vectors/abstract-dots-background-vector-id1144435821?k=6&m=1144435821&s=612x612&w=0&h=OEMInrWNPDT_uTKS7dtdy9vGcbYmE9wt5CJRlzVSfnU=");
+}

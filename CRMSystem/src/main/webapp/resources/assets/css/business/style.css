@@ -1,0 +1,41 @@
+.field__label {
+    float: right;
+    margin-right: 55px;
+}
+
+.table{
+    margin: auto;
+}
+
+.form-control{
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 5px;
+    width: 320px;
+    outline: none;
+}
+
+.form-control-select{
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 5px;
+    width: 332px;
+    outline: none;
+}
+
+.div__body {
+    background-color: white; 
+    /*background-color: red;*/
+    border-radius: 15px;
+    width: 60%;
+    margin:auto;
+    flex-wrap: wrap;
+    flex: 1;
+
+}
+
+
+
+

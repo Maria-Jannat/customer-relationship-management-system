@@ -1,0 +1,45 @@
+.task-image{
+     /*background-repeat: no-repeat;*/
+}
+
+#task-create-body{
+    background: white;
+    height: auto;
+    width: 800px;
+    margin: auto;
+    /*padding: 10px;*/
+    border-right: 5px solid #319197;
+    border-bottom: 5px solid #319197;
+    /*margin-top: 10px;*/
+    margin-bottom: 15px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+.task-table{
+    margin: auto;
+}
+
+.field-label {
+    float: right;
+    margin-right: 25px;
+}
+
+.form-control{
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 5px;
+    width: 320px;
+    outline: none;
+}
+
+.form-control-select{
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 5px;
+    width: 332px;
+    outline: none;
+}
+

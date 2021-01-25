@@ -1,0 +1,73 @@
+.bottom__header {
+  height: 55px;
+  /* background-color: rgba(87, 4, 4, 0.884); */
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  box-shadow: 1px 0.5px 1px #aaaaaa;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+}
+
+.bottom__header__left{
+  width: 30%;
+  background-color: white;
+}
+
+.bottom__header__right{
+  width: 70%;
+  background-color: white;
+}
+
+.bottom__header__title{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 50px;
+  /* background: tomato; */
+}
+
+.bottom__header__button__save{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px 15px;
+  float: right;
+  margin-top: 12px;
+  margin-right: 50px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+  background-color: white;
+  /* border: 2px solid #a80903; */
+}
+
+.bottom__header__button__saveAndNew{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px 15px;
+  float: right;
+  margin-top: 12px;
+  border-radius: 15px;
+  outline: none;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: white;
+  /* border: 2px solid #a80903; */
+}
+
+.bottom__header__button__cancel{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px 15px;
+  float: right;
+  margin-top: 12px;
+  border-radius: 15px;
+  outline: none;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: white;
+  /* border: 2px solid #a80903; */
+}
+

@@ -1,0 +1,58 @@
+.crm-create-body{
+    background: white;
+    height: auto;
+    width: 800px;
+    margin: auto;
+    /*padding: 10px;*/
+    border-right: 5px solid #319197;
+    border-bottom: 5px solid #319197;
+    /*margin-top: 10px;*/
+    margin-bottom: 5px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+.crm__table{
+    margin: auto;
+}
+
+.field-label {
+    float: right;
+    margin-right: 25px;
+}
+
+.field__label {
+    float: right;
+    margin-right: 55px;
+}
+
+.crm__table{
+    margin: auto;
+}
+
+.form-control{
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 5px;
+    width: 320px;
+    outline: none;
+}
+
+.form-control-select{
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 5px;
+    width: 332px;
+    outline: none;
+}
+
+.crm-image{
+    /*background-image: url("https://media.istockphoto.com/vectors/abstract-dots-background-vector-id1144435821?k=6&m=1144435821&s=612x612&w=0&h=OEMInrWNPDT_uTKS7dtdy9vGcbYmE9wt5CJRlzVSfnU=")*/
+    background-image: url("https://d29fhpw069ctt2.cloudfront.net/photo/52200/preview/npreview_1280x1280.jpg")
+    /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh7NvAxIowvIureGJPDUGKXY9CnVoTENZugA&usqp=CAU")*/
+    /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTojF0FhK2i8Ga0Ij26zdxdBu15k9_vM91JiA&usqp=CAU")*/
+     
+}
+
