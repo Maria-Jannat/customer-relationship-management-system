@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xmlns:aop = "http://www.springframework.org/schema/aop"
+       xmlns:tx = "http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop 
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">   
+    
+    <context:component-scan base-package="com.cesurazure.crm"/>
+    <context:annotation-config/>
+    
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" /> 
+    
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="url" value="jdbc:mysql://localhost:3306/crm_system"/>
+        <property name="username" value="root"/>
+        <property name="password" value="maria"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+    </bean>
+    
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="hibernateProperties">
+            <value>
+                hibernate.dialect = org.hibernate.dialect.MySQLDialect
+                hibernate.show_sql = true
+            </value>
+        </property>
+        <property name="packagesToScan">
+            <value>com.cesurazure.crm.model</value>
+        </property>
+        <property name="annotatedClasses">
+            <list>
+                <value>com.cesurazure.crm.model.CRMUser</value>
+                <value>com.cesurazure.crm.model.Lead</value>
+                <value>com.cesurazure.crm.model.Business</value>
+                <value>com.cesurazure.crm.model.AssignCRM</value>
+                <value>com.cesurazure.crm.model.AssignLead</value>
+                <value>com.cesurazure.crm.model.Task</value>
+                <value>com.cesurazure.crm.model.PackMinute</value>
+                <value>com.cesurazure.crm.model.PackSMS</value>
+                <value>com.cesurazure.crm.model.PackGPRS</value>
+                <value>com.cesurazure.crm.model.PackCombined</value>
+                <value>com.cesurazure.crm.model.CorporateHouse</value>
+                <value>com.cesurazure.crm.model.ServiceForBusiness</value>
+                <value>com.cesurazure.crm.model.Rating</value>
+                <value>com.cesurazure.crm.model.CustomerManager</value>
+                <value>com.cesurazure.crm.model.CustomerFeedback</value>
+                <value>com.cesurazure.crm.model.CustomerComplain</value>
+            </list>
+        </property>      
+    </bean>
+    <bean id="tx" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <tx:annotation-driven transaction-manager="tx"/>
+    <mvc:annotation-driven/>
+    <mvc:resources mapping="/resources/**" location="/resources/" ></mvc:resources>
+    
+</beans>

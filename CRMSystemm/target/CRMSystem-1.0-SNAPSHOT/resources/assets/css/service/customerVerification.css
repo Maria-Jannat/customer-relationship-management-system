@@ -1,0 +1,477 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.service-card{
+    width: 250px;
+    height: fit-content;
+    /*background: #f0c14b;*/
+    background: #ff7a18;
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/*DROPDOWN BUTTON*/
+#myDropdown{
+    /*display: inline-block;*/
+    margin-top: initial;
+    margin-top: 15px;
+    /* border-radius: 15px; */
+    width: 50px;
+    background: white;
+    /* border: 2px solid black; */
+    width: fit-content; 
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    color: white;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+}
+
+.show {display: block;}
+
+
+/*REMONSTRANCE1*/
+
+#sidebar {
+    /*Strictly Necessary */
+    position:fixed; 
+    height: 100%;
+    width:30%;
+    margin: 0px;  
+
+    /*Aesthetics*/
+    background: #fff;
+    /*background: #af002d;*/ 
+    /*border-radius: 7px;*/  
+}
+
+.siderbar-header{
+    height: 50px;
+    box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.text-container{
+    margin: auto;
+    background: #af002d;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+
+#rightSideWrapper {
+    /*Strictly Necessary */
+    width:70%; 
+    float: right;
+
+    /*Aesthetics*/
+    background: white;	
+}
+
+header {
+    /*Strictly Necessary */
+    position: fixed;
+    width: 70%;	
+    height: 50px; /*Adjust the hight to your purposes*/
+
+    /*Aesthetics*/
+    background: lightSalmon;
+    /*border-radius: 7px;*/
+}
+
+.ContentBox{
+    margin-top: 100px; /*The height of the   header*/
+    display:flex;
+    flex-flow: row wrap;
+} 
+
+main, section, footer {
+    /*Aesthetics*/
+    background: white; 
+    /*border-radius: 7px;*/ 
+    /*margin: 5px;*/ 
+    padding: 20px;
+}
+
+main {
+    /*Strictly Necessary */
+    height: 400px;
+    order: 1;
+    flex: 0 1 100%; 
+
+}
+
+main{
+    margin-top: -40px;
+}
+
+/*section {
+    Strictly Necessary 
+    height: 400px;
+    order: 2;
+    flex: 0 1 100%;
+
+}*/
+
+/*footer {
+    Strictly Necessary 
+    height: 100px;
+    order: 3;
+    flex: 0 1 100%;
+
+}*/
+
+/*RIGHT HEADER*/
+.sign-up-container-right-header{
+    height: 50px;
+    background: #fff;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+}
+.header-left{
+    width: 35%;
+    background: white;
+}
+
+.remonstrance-header-left{
+    width: 20%;
+    /*background: #af002d;*/
+}
+
+.remonstrance-header-left>a{
+    text-decoration: none;
+}
+
+.header-center{
+    width: 25%;
+    background: white;
+}
+.header-right{
+    width: 50%;
+    background: white;
+    display: flex;
+    text-align: center;
+}
+
+.header-right-left{
+    width: 40%;
+    background: white;
+    justify-content: center;
+}
+
+.header-right-right{
+    width: 60%;
+    background: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 18px;
+    font-family: arial;
+    font-size: 13.3333px;
+}
+
+.header-right-right>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.header-right-right>a:hover{
+    color: #ff7a18;
+    cursor: pointer;
+}
+
+.support-button{
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 18px;
+    margin-right: 24px;
+    /*cursor: pointer;*/
+    /*border-bottom: 1px solid orangered;*/
+}
+
+.support-button:hover{
+    color: #ff7a18;
+    cursor: pointer;
+}
+
+/*SIGNUP CONTAINER*/
+
+.sign-in-container{
+    width: fit-content;
+    height: fit-content;
+    /*background: #f0c14b;*/
+    background: #fff;
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+    margin: auto;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.form-control{
+    width: 95%;
+    padding: 5px;
+    /*border-radius: 15px;*/
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.submit-button{
+    width: 45%;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 3px #b4b4b4;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-button>a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cancel-button{
+    width: 45%;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 3px #b4b4b4;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-button>a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-control-select{
+    width: 95%;
+    padding: 5px;
+    /*border-radius: 15px;*/
+    outline: none;
+    margin-bottom: 10px;
+}
+
+h1, h5{
+    font-family: Arial;
+    margin-bottom: 15px;
+}
+
+
+/*LOGO DESIGN*/
+.logo-m-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+    /*margin-left: 40px;*/
+}
+
+.logo-c-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+}
+
+.logo-r-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+}
+
+.logo-m-second{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+}
+
+.logo-div{
+    display: flex;
+    margin-left: 10px;
+    /*margin-top: 15px;*/
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.main-left-content{
+    transform: rotate(-25deg);
+    margin-left: 30px;
+    margin-top: 120px;
+    text-align: center;
+    font-size: xx-large;
+    line-height: 60px;
+}
+
+.rainbow {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #ff7a18), color-stop(0.15, #319197), color-stop(0.3, #af002d), color-stop(0.45, #2ff), color-stop(0.6, #ff7a18),color-stop(0.75, #ff7a18), color-stop(0.9, #af002d), color-stop(1, #319197) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #ff7a18), color-stop(0.15, #f2f), color-stop(0.3, #af002d), color-stop(0.45, #2ff), color-stop(0.6, #af002d),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #af002d) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.main-right{
+    width: 70%;
+    background:#ff7a18;
+}
+
+/*FOR MODAL*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    font-family: arial;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*INPUT DESIGN FOR OTP*/
+.input-div{
+    justify-content: center;
+    display: flex;
+}
+
+.input-div>input{
+    display: flex;
+    width: 18px;
+    outline: none;
+    border: 1px solid gray;
+    margin-left: 6px;
+}
+
+.verify-button{
+    width: 65%;
+    padding: 5px;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    outline: none;
+    box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.2);
+    border: none;
+}
+
+.verify-button>a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sign-in-button{
+    width: 95%;
+    padding: 5px;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    outline: none;
+    box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.2);
+    border: none;
+}
+
+.sign-in-button>a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}

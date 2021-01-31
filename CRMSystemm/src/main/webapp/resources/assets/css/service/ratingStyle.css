@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    width: 200px;
+    padding: 10px;
+    /*background: #af002d;*/
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-one{
+    width: 200px;
+    padding: 10px;
+    /*background: #af002d;*/
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 45%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-two{
+    width: 200px;
+    padding: 10px;
+    /*background: #af002d;*/
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 55%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center .stars{
+    height: 50px;
+    width: 200px;
+    margin-left: -10px;
+    background: white;
+}
+.stars input{
+    display: none;
+}
+.stars label{
+    float: right;
+    font-size: 30px;
+    color: black;
+    /*color: lightgrey;*/
+    text-shadow: 1px 1px #bbb;
+}
+.stars label:before{
+    content: '★';
+}
+.stars input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label{
+    color: gold;
+}
+.stars input:checked > label:hover,
+.stars input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+.stars .result:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 50%;
+    transform: translateX(-47%);
+    bottom: -30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: gold;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+.stars input:checked ~ .result:before{
+    display: block;
+}
+.stars #five:checked ~ .result:before{
+    content: "I love it 😍";
+}
+.stars #four:checked ~ .result:before{
+    content: "I like it 😎";
+}
+.stars #three:checked ~ .result:before{
+    content: "It's good 😄";
+}
+.stars #two:checked ~ .result:before{
+    content: "I don't like it 😒";
+}
+.stars #one:checked ~ .result:before{
+    content: "I hate it 😠";
+}
+
+/*BENIM CODE HEADER ICIN*/
+.header{
+    height: 50px;
+    background: #fff;
+    box-shadow: 1px 1px 3px #BABECC,
+        -5px -5px 10px #ffffff73;
+    display: flex;
+}
+
+.rating-header-left{
+    width: 20%;
+    height: 100%;
+    background: red;
+}
+
+.rating-header-left a{
+    text-decoration: none;
+}
+
+.rating-header-right{
+    width: 80%;
+    height: 100%;
+    background: red;
+    text-align: center;
+}
+
+.rating-header-right-content{
+    display: flex;
+    font-family: arial;
+    font-size: 13.3333px;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    height: 100%;
+}
+
+.rating-header-right-content>a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.rating-header-right-content>a:hover{
+    color: #ff7a18;
+}
+
+
+/*LOGO DESIGN*/
+.logo-m-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+    /*margin-left: 40px;*/
+}
+
+.logo-c-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+}
+
+.logo-r-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+}
+
+.logo-m-second{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+}
+
+.logo-div{
+    display: flex;
+    height: 50px; 
+    width: 80%;
+    background: white;
+    width: 100%;
+    padding-left: 40px;
+    align-items: center;
+}
+
+
+/*MAIN CONTENT*/
+.main-left{
+    width: 30%;
+    height: fit-content;
+    transform: rotate(-25deg);
+    margin-left: 10px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    background: white;
+}
+
+.rainbow {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #ff7a18), color-stop(0.15, #af002d), color-stop(0.3, #af002d), color-stop(0.45, #2ff), color-stop(0.6, #ff7a18),color-stop(0.75, #ff7a18), color-stop(0.9, #af002d), color-stop(1, #af002d) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #ff7a18), color-stop(0.15, #f2f), color-stop(0.3, #af002d), color-stop(0.45, #2ff), color-stop(0.6, #af002d),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #af002d) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+main{
+    display: flex;
+}
+/*MAIN RIGHT*/
+.main-right{
+    width: 70%;
+    height: fit-content;
+    /*transform: rotate(-25deg);*/
+    /*margin-left: 10px;*/
+    /*margin-top: 50px;*/
+    text-align: center;
+    /*font-size: xX-large;*/
+    /*line-height: 60px;*/
+    background: #f2f;
+}
+
+
+
+/*CARD DESIGN*/
+.post-button-voice{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    box-shadow: 0 3px #b4b4b4;
+    cursor: pointer;
+    color: white;
+}
+
+.post-button-voice:hover {
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+}
+
+.post-button-voice:active {
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    box-shadow: 0 5px #f0f0f0;
+    /*transform: translateY(1px);*/
+}
+
+.post-button-internet{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    box-shadow: 0 3px #b4b4b4;
+    cursor: pointer;
+    color: white;
+}
+
+.post-button-internet:hover {
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+}
+
+.post-button-internet:active {
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    box-shadow: 0 5px #f0f0f0;
+    /*transform: translateY(1px);*/
+}
+
+.post-button-package{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    box-shadow: 0 3px #b4b4b4;
+    cursor: pointer;
+    color: white;
+}
+
+.post-button-package:hover {
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+}
+
+.post-button-package:active {
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    box-shadow: 0 5px #f0f0f0;
+}
+

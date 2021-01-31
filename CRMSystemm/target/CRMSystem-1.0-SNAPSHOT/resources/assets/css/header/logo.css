@@ -1,0 +1,47 @@
+.logo-m-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+    /*margin-left: 40px;*/
+}
+
+.logo-c-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+}
+
+.logo-r-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+}
+
+.logo-m-second{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    font-size: large;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+}
+
+.logo-div{
+    display: flex;
+}
+
+
+

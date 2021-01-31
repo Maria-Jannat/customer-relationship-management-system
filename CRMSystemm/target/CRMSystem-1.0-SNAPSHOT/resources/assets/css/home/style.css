@@ -1,0 +1,25 @@
+.activities{
+/*    background: red;*/
+}
+
+.activities-report-card {
+    width: 60%;
+    margin-left: 25px;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    /*text-align: center;*/
+    background-color: #fff;
+    float: left;
+}
+
+.lead-report-card {
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    /*text-align: center;*/
+    background-color: #fff;
+    float: left;
+}

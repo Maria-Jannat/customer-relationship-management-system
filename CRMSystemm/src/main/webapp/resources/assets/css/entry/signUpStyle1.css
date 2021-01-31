@@ -1,0 +1,272 @@
+*{ 
+    margin: 0px;
+}
+
+#sidebar {
+    /*Strictly Necessary */
+    position:fixed; 
+    height: 100%;
+    width:30%;
+    margin: 0px;  
+
+    /*Aesthetics*/
+    /*background: lightblue;*/ 
+    background: #af002d; 
+    /*border-radius: 7px;*/  
+}
+
+.text-container{
+    margin: auto;
+    background: #af002d;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+
+#rightSideWrapper {
+    /*Strictly Necessary */
+    width:70%; 
+    float: right;
+
+    /*Aesthetics*/
+    background: white;	
+}
+
+header {
+    /*Strictly Necessary */
+    position: fixed;
+    width: 70%;	
+    height: 50px; /*Adjust the hight to your purposes*/
+
+    /*Aesthetics*/
+    background: lightSalmon;
+    /*border-radius: 7px;*/
+}
+
+.ContentBox{
+    margin-top: 100px; /*The height of the   header*/
+    display:flex;
+    flex-flow: row wrap;
+} 
+
+main, section, footer {
+    /*Aesthetics*/
+    background: white; 
+    /*border-radius: 7px;*/ 
+    /*margin: 5px;*/ 
+    padding: 20px;
+}
+
+main {
+    /*Strictly Necessary */
+    height: 400px;
+    order: 1;
+    flex: 0 1 100%; 
+
+}
+
+main{
+    margin-top: -40px;
+}
+
+section {
+    /*Strictly Necessary */
+    height: 400px;
+    order: 2;
+    flex: 0 1 100%;
+
+}
+
+footer {
+    /*Strictly Necessary */
+    height: 100px;
+    order: 3;
+    flex: 0 1 100%;
+
+}
+
+/*RIGHT HEADER*/
+.sign-up-container-right-header{
+    height: 50px;
+    background: #fff;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+}
+.header-left{
+    width: 35%;
+    background: white;
+}
+.header-center{
+    width: 25%;
+    background: white;
+}
+.header-right{
+    width: 50%;
+    background: white;
+    display: flex;
+    text-align: center;
+}
+
+.header-right-left{
+    width: 40%;
+    background: white;
+    justify-content: center;
+}
+
+.header-right-right{
+    width: 60%;
+    background: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 18px;
+    font-family: arial;
+    font-size: 13.3333px;
+}
+
+.header-right-right>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.header-right-right>a:hover{
+    color: #ff7a18;
+    cursor: pointer;
+}
+
+.support-button{
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 18px;
+    margin-right: 24px;
+    /*cursor: pointer;*/
+    /*border-bottom: 1px solid orangered;*/
+}
+
+.support-button:hover{
+    color: #ff7a18;
+    cursor: pointer;
+}
+
+/*SIGNUP CONTAINER*/
+
+.sign-in-container{
+    width: fit-content;
+    height: fit-content;
+    /*background: #f0c14b;*/
+    background: #fff;
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+    margin: 20px;
+    padding: 20px;
+}
+
+.form-control{
+    width: 95%;
+    padding: 5px;
+    /*border-radius: 15px;*/
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.sign-in-button{
+    width: 95%;
+    padding: 5px;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#af002d 76.05%);
+    outline: none;
+    box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.2);
+    border: none;
+}
+
+.sign-in-button>a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-control-select{
+    width: 95%;
+    padding: 5px;
+    /*border-radius: 15px;*/
+    outline: none;
+    margin-bottom: 10px;
+}
+
+h1, h5{
+    font-family: Arial;
+    margin-bottom: 5px;
+}
+
+/*LOGO DESIGN*/
+.logo-container {
+    width: 300px;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.logo-m-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    font-size: 45px;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+    margin-left: 15px;
+    padding: 4px;
+
+}
+
+.logo-c-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    font-size: 45px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+    padding: 4px;
+
+}
+
+.logo-r-first{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    font-size: 45px;
+    font-weight: bold;
+    transform: rotate(20deg);
+    width: fit-content;
+    padding: 4px;
+
+}
+
+.logo-m-second{
+    color: white;
+    background: black;
+    background-image: linear-gradient(130deg,#ff7a18,#af002d 51.07%,#319197 76.05%);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    font-size: 45px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    width: fit-content;
+    padding: 4px;
+}
+
+.logo-div{
+    display: flex;
+    justify-content: center;
+}
+

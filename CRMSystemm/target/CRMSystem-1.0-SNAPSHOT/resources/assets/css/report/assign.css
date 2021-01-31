@@ -1,0 +1,24 @@
+.assign-report-card{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 4rm;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00),
+        to(#da1b60));
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,0.25), inset -2px -2px -2px
+        rgba(0,0,0,0.25);
+}
